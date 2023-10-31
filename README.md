@@ -172,4 +172,6 @@ Navigate to `localhost:1313/docs/` and you should see a card link to the **Examp
 
 Copyright © 2022-2023 [Colin Wilson](https://github.com/colinwilson)
 
+Copyright © 2023 [Zonx Project Initiative](https://zonx.org)
+
 [^1]: [Hugo Modules](https://gohugo.io/hugo-modules/)
