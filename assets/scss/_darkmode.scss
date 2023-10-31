@@ -20,8 +20,13 @@
     background-color: $body-bg-dark;
   }
 
-  .hero {
-    background-image: none;
-    background-color: #1c1e21;
+  .btn-landing svg {
+    stroke: $body-color-dark;
+   }
+
+  .btn-landing svg path {
+    fill: none;
   }
+
+  --bs-btn-border-color: #fff;
 }

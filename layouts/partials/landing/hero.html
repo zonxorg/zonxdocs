@@ -5,21 +5,43 @@
     {{ $filename := .filename }}
     {{ $pathDesktop := printf "%s/%s" $path $filename.desktop }}
     {{ $pathMobile := printf "%s/%s" $path $filename.mobile }}
+    {{ $pathDesktopDark := printf "%s/%s" $path $filename.desktopDark }}
+    {{ $pathMobileDark := printf "%s/%s" $path $filename.mobileDark }}
         <style>
-            .hero {
-                {{ with $filename.desktop }}
-                    {{ with resources.Get $pathDesktop }}
-                        @media (min-width: 768px) {
+            {{ with $filename.desktop }}
+                {{ with resources.Get $pathDesktop }}
+                    @media (min-width: 768px) {
+                        .hero {
                             background-image: url("{{ .RelPermalink }}");
                         }
-                    {{ end }}
+                    }
                 {{ end }}
-                {{ with $filename.mobile }}
-                    {{ with resources.Get $pathMobile }}
+            {{ end }}
+            {{ with $filename.desktopDark }}
+                {{ with resources.Get $pathDesktopDark }}
+                    @media (min-width: 768px) and (prefers-color-scheme: dark) {
+                        .hero {
+                            background-image: url("{{ .RelPermalink }}");
+                        }
+                    }
+                {{ end }}
+            {{ end }}
+            {{ with $filename.mobile }}
+                {{ with resources.Get $pathMobile }}
+                    .hero {
                         background-image: url("{{ .RelPermalink }}");
-                    {{ end }}
+                    }
                 {{ end }}
-            }
+            {{ end }}
+            {{ with $filename.mobileDark }}
+                {{ with resources.Get $pathMobileDark }}
+                    @media (prefers-color-scheme: dark) {
+                        .hero {
+                            background-image: url("{{ .RelPermalink }}");
+                        }
+                    }
+                {{ end }}
+            {{ end }}
         </style>
 {{ end }}
 <section class="d-table w-100 overflow-hidden hero">

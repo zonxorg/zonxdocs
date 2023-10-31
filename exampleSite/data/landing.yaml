@@ -6,10 +6,12 @@ hero:
   weight: 10
 
   backgroundImage:
-    path: "images/templates/hero"
+    path: "images/templates/hero" # path to image under configured assets directory. default 'images'
     filename:
-      desktop: "gradient-desktop.webp"
-      mobile: "gradient-mobile.webp"
+      desktop: "gradient-all.webp"
+      mobile: "gradient-all.webp"
+      desktopDark: "gradient-all-dark.webp"
+      mobileDark: "gradient-all-dark.webp"
 
   # badge:
   #   text: v0.0.2

@@ -1,0 +1,12 @@
+{
+  "name": "zonxdocs",
+  "description": "A lightweight, modern documentation theme for Hugo",
+  "version": "0.1.0",
+  "license": "CLOSED",
+  "scripts": {
+    "dev": "hugo server",
+    "build": "hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic",
+    "test": "hugo server --disableFastRender --navigateToChanged --templateMetrics --templateMetricsHints --watch --forceSyncStatic -e production --minify",
+    "format": "prettier -w ."
+  }
+}
