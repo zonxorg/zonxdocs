@@ -6,7 +6,7 @@ author: "Colin Wilson"
 title: "Quickstart"
 icon: "rocket_launch"
 toc: true
-description: "A quickstart guide to creating new content in Lotus Docs"
+description: "A quickstart guide to creating new content in Zonx Docs"
 publishdate: "2023-05-03T22:37:22+01:00"
 tags: ["Beginners"]
 ---
@@ -66,7 +66,7 @@ The Hugo GitHub repository contains pre-built versions of the Hugo command-line 
 
 For more instruction on installing these releases, refer to [Hugo’s documentation](https://gohugo.io/getting-started/installing/)
 
-## Create a New Lotus Docs Site
+## Create a New Zonx Docs Site
 
 With Hugo installed, create a new Hugo project using the `hugo new` command:
 
@@ -82,12 +82,12 @@ hugo mod init my-docs-site
 
 {{% alert context="info" text="**Note**: If your site already has a git repository, you can initialise your site using the path to your site's git repository e.g. `hugo mod init github.com/<user>/<my-docs-site>/`." /%}}
 
-You can now choose your preferred method for adding the Lotus Docs theme to your new site from the options below:
+You can now choose your preferred method for adding the Zonx Docs theme to your new site from the options below:
 
 {{< tabs tabTotal="3">}}
 {{% tab tabName="Add as a Hugo Module" %}}
 
-Edit the `hugo.toml` configuration file to include the [Lotus Docs theme](https://github.com/colinwilson/lotusdocs) and the [Hugo Bootstrap module](https://github.com/gohugoio/hugo-mod-bootstrap-scss) (lines `5 to 11` below):
+Edit the `hugo.toml` configuration file to include the [Zonx Docs theme](https://github.com/zonxorg/zonxdocs) and the [Hugo Bootstrap module](https://github.com/gohugoio/hugo-mod-bootstrap-scss) (lines `5 to 11` below):
 
 ```toml {linenos=table,hl_lines=["5-11"]}
 baseURL = 'http://example.org/'
@@ -96,7 +96,7 @@ title = 'My New Hugo Site'
 
 [module]
     [[module.imports]]
-        path = "github.com/colinwilson/lotusdocs"
+        path = "github.com/zonxorg/zonxdocs"
         disable = false
     [[module.imports]]
         path = "github.com/gohugoio/hugo-mod-bootstrap-scss/v5"
@@ -107,11 +107,11 @@ title = 'My New Hugo Site'
 {{% /tab %}}
 {{% tab tabName="Add as a Git submodule" %}}
 
-Initialize Git and clone the Lotus Docs theme repository as a submodule:
+Initialize Git and clone the Zonx Docs theme repository as a submodule:
 
 ```shell
 git init
-git submodule add https://github.com/colinwilson/lotusdocs themes/lotusdocs
+git submodule add https://github.com/zonxorg/zonxdocs themes/zonxdocs
 ```
 
 Update your existing `hugo.toml` config file with the configuration below:
@@ -123,7 +123,7 @@ title = 'My New Hugo Site'
 
 [module]
     [[module.imports]]
-        path = "lotusdocs"
+        path = "zonxdocs"
         disable = false
     [[module.imports]]
         path = "github.com/gohugoio/hugo-mod-bootstrap-scss/v5"
@@ -135,15 +135,15 @@ title = 'My New Hugo Site'
 {{% /tab %}}
 {{% tab tabName="Clone theme files" %}}
 
-In cases where you prefer to customise and maintain the Lotus Docs theme yourself, you can clone the theme into your project’s `themes` subdirectory.
+In cases where you prefer to customise and maintain the Zonx Docs theme yourself, you can clone the theme into your project’s `themes` subdirectory.
 
-Run the following command from your project’s root directory to clone the Lotus Docs theme into your `themes` subdirectory:
+Run the following command from your project’s root directory to clone the Zonx Docs theme into your `themes` subdirectory:
 
 ```shell
-git clone https://github.com/colinwilson/lotusdocs themes/lotusdocs
+git clone https://github.com/zonxorg/zonxdocs themes/zonxdocs
 ```
 
-Edit the `hugo.toml` configuration file to include the Lotus Docs theme and the Hugo Bootstrap module (lines `5 to 11` below):
+Edit the `hugo.toml` configuration file to include the Zonx Docs theme and the Hugo Bootstrap module (lines `5 to 11` below):
 
 ```toml {linenos=table,hl_lines=["5-11"]}
 baseURL = 'http://example.org/'
@@ -152,7 +152,7 @@ title = 'My New Hugo Site'
 
 [module]
     [[module.imports]]
-        path = "lotusdocs"
+        path = "zonxdocs"
         disable = false
     [[module.imports]]
         path = "github.com/gohugoio/hugo-mod-bootstrap-scss/v5"
@@ -199,7 +199,7 @@ author = "Colin Wilson"
 title = "Quickstart"
 icon = "rocket_launch"
 toc = true
-description = "A quickstart guide to creating new content in Lotus Docs"
+description = "A quickstart guide to creating new content in Zonx Docs"
 publishdate = "2023-05-03T22:37:22+01:00"
 tags = ["Beginners"]
 +++
@@ -216,7 +216,7 @@ hugo new docs/examplepage.md
 
 ## Preview your Site
 
-Now that you've created some sample content you can preview your new Lotus Docs site using the `huge server` command:
+Now that you've created some sample content you can preview your new Zonx Docs site using the `huge server` command:
 
 ```shell
 hugo server -D
@@ -224,17 +224,17 @@ hugo server -D
 
 Navigate to `localhost:1313/docs` and you should see a card link to the **Example Page** created earlier:
 
-![New Lotus Docs Site - Example Content](https://res.cloudinary.com/lotuslabs/image/upload/v1690992310/Lotus%20Docs/images/lotus_docs_new_site_and_content_module_setup_oiuyex.png)
+![New Zonx Docs Site - Example Content](https://res.cloudinary.com/lotuslabs/image/upload/v1690992310/Lotus%20Docs/images/lotus_docs_new_site_and_content_module_setup_oiuyex.png)
 
 ## Ordering Content
 
-Lotus Docs uses a simple weighting method for ordering content and creating menus.
+Zonx Docs uses a simple weighting method for ordering content and creating menus.
 
 The front matter `weight` variable is used to order all content and auto-generate the menu structure (including the sidebar menu and page navigation buttons). Lower weight values take higher precedence. So content with lower weights come first and are so ordered in the menu.
 
 ## Auto-Generated Menu
 
-As mentioned, Lotus Docs auto-generates menus and navigation links using the [front matter](https://gohugo.io/content-management/front-matter/#predefined) weight variable. For example, Navigate to the `content/docs` directory and create two content files, `doc-one.md` and `doc-two.md`, then edit the weight values to `100` and `200` respectively:
+As mentioned, Zonx Docs auto-generates menus and navigation links using the [front matter](https://gohugo.io/content-management/front-matter/#predefined) weight variable. For example, Navigate to the `content/docs` directory and create two content files, `doc-one.md` and `doc-two.md`, then edit the weight values to `100` and `200` respectively:
 
 {{< alert text="It's good practice to increment the weight of your posts by a factor of <code>100</code>. This ensures plenty of room to insert new posts between existing items should you need to." />}}
 
@@ -251,7 +251,7 @@ Links to both posts are now visible in the sidebar menu where `doc-one.md` will 
 
 ![sidebar menu items example](https://res.cloudinary.com/lotuslabs/image/upload/v1684719173/Lotus%20Docs/images/sidebar_menu_example_01-modified_qkb2si.png)
 
-{{< alert context="info" text="The option to manually configure a predefined menu structure in <code>hugo.toml</code> as opposed to an auto-generated one is part of the Lotus Docs roadmap." />}}
+{{< alert context="info" text="The option to manually configure a predefined menu structure in <code>hugo.toml</code> as opposed to an auto-generated one is part of the Zonx Docs roadmap." />}}
 
 ## Second Level Menu Items
 

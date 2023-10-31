@@ -1,12 +1,8 @@
-# Lotus Docs
+# Zonx Docs
 
-[Lotus Docs](https://lotusdocs.dev) is an easily updated and customisable [Hugo](https://gohugo.io/) theme for building fast, secure, and SEO-friendly documentation sites.
+[Zonx Docs](https://zonxdocs.pages.dev) is an easily updated and customisable [Hugo](https://gohugo.io/) theme for building fast, secure, and SEO-friendly documentation sites.
 
-![Lotus Docs Banner](https://res.cloudinary.com/lotuslabs/image/upload/r_10/v1693340386/Lotus%20Docs/Social%20Media/lotus_docs_social_preview_github_1280x640_colour_v1.3_xzm1ex.webp)
-
-Check out the demo site [https://lotusdocs.dev/docs/](https://lotusdocs.dev/docs/) (also doubles as the documentation guide for Lotus Docs 📖)
-
-🚧 **WARNING** 🚧 - **Lotus Docs is currently in pre-release development and thus not recommended for use in production at this time. But please do try it out 😊. Pull requests and feedback are most welcome.**
+Check out the demo site [https://zonxdocs.pages.dev/docs/](https://zonxdocs.pages.dev/docs/) (also doubles as the documentation guide for Zonx Docs 📖)
 
 ## Features
 
@@ -15,7 +11,7 @@ Check out the demo site [https://lotusdocs.dev/docs/](https://lotusdocs.dev/docs
 * [x] Fast, Accessible and SEO-Friendly (4 x 💯 scores on [Google Lighthouse](https://pagespeed.web.dev/)!)
 * [x] Secure by default
 * [x] Built on Bootstrap 5
-* [x] Deploy on [GitHub Pages](https://lotusdocs.dev/docs/deployment/platforms/github-pages/), [GitLab Pages](https://lotusdocs.dev/docs/deployment/platforms/gitlab-pages/), [Vercel](https://vercel.com/), [Netlify](https://netlify.com), or [Cloudflare Pages](https://pages.cloudflare.com/)
+* [x] Deploy on [GitHub Pages](https://zonxdocs.pages.dev/docs/deployment/platforms/github-pages/), [GitLab Pages](https://zonxdocs.pages.dev/docs/deployment/platforms/gitlab-pages/), [Vercel](https://vercel.com/), [Netlify](https://netlify.com), or [Cloudflare Pages](https://pages.cloudflare.com/)
 * [x] Multilingual support (i18n)
 * [x] Powerful Syntax Highlighting via [Prism.js](https://prismjs.com/)
 * [x] Dark Mode
@@ -47,7 +43,7 @@ Check out the demo site [https://lotusdocs.dev/docs/](https://lotusdocs.dev/docs
 
 ### Initialize your site as a Hugo Module
 
-The Lotus Docs theme makes use of the [Hugo Bootstrap Module](https://github.com/gohugoio/hugo-mod-bootstrap-scss). For this reason, it's necessary to initialize your site as a Hugo Module. If your site isn't already, use the `hugo mod init` command to initialize your site as a Hugo module:
+The Zonx Docs theme makes use of the [Hugo Bootstrap Module](https://github.com/gohugoio/hugo-mod-bootstrap-scss). For this reason, it's necessary to initialize your site as a Hugo Module. If your site isn't already, use the `hugo mod init` command to initialize your site as a Hugo module:
 
 ```bash
 hugo mod init github.com/<username>/<your-hugo-site-name>
@@ -55,7 +51,7 @@ hugo mod init github.com/<username>/<your-hugo-site-name>
 
 ### Install Options
 
-The Lotus Docs theme can be installed using one of the following methods:
+The Zonx Docs theme can be installed using one of the following methods:
 
 - As a Hugo Module[^1] (recommended)
 - As a Git submodule
@@ -63,7 +59,7 @@ The Lotus Docs theme can be installed using one of the following methods:
 
 ### Install as a Hugo Module (recommended)
 
-Edit the `hugo.toml` configuration file to include the [Lotus Docs theme](https://github.com/colinwilson/lotusdocs) and the [Hugo Bootstrap module](https://github.com/gohugoio/hugo-mod-bootstrap-scss) as modules:
+Edit the `hugo.toml` configuration file to include the [Zonx Docs theme](https://github.com/zonxorg/zonxdocs) and the [Hugo Bootstrap module](https://github.com/gohugoio/hugo-mod-bootstrap-scss) as modules:
 
 ```toml
 baseURL = 'http://example.org/'
@@ -72,7 +68,7 @@ title = 'My New Hugo Site'
 
 [module]
     [[module.imports]]
-        path = "github.com/colinwilson/lotusdocs"
+        path = "github.com/zonxorg/zonxdocs"
         disable = false
     [[module.imports]]
         path = "github.com/gohugoio/hugo-mod-bootstrap-scss/v5"
@@ -85,7 +81,7 @@ From the root of your project run the following `git` commands:
 
 ```bash
 git init
-git submodule add https://github.com/colinwilson/lotusdocs themes/lotusdocs
+git submodule add https://github.com/zonxorg/zonxdocs themes/zonxdocs
 ```
 
 Edit the `hugo.toml` config file:
@@ -98,9 +94,9 @@ title = 'My New Hugo Site'
 [module]
     # uncomment line below for temporary local development of module
     # or when using a 'theme' as a git submodule
-    replacements = "github.com/colinwilson/lotusdocs -> lotusdocs"
+    replacements = "github.com/zonxorg/zonxdocs -> zonxdocs"
     [[module.imports]]
-        path = "github.com/colinwilson/lotusdocs"
+        path = "github.com/zonxorg/zonxdocs"
         disable = false
     [[module.imports]]
         path = "github.com/gohugoio/hugo-mod-bootstrap-scss/v5"
@@ -109,10 +105,10 @@ title = 'My New Hugo Site'
 
 ### Install Locally
 
-There may be cases where you prefer to customize and maintain the Lotus Docs theme yourself. In such cases, use `git` to clone the theme into the `themes/lotusdocs` directory:
+There may be cases where you prefer to customize and maintain the Zonx Docs theme yourself. In such cases, use `git` to clone the theme into the `themes/zonxdocs` directory:
 
 ```bash
-git clone https://github.com/colinwilson/lotusdocs themes/lotusdocs
+git clone https://github.com/zonxorg/zonxdocs themes/zonxdocs
 ```
 
 Edit the `hugo.toml` config file:
@@ -125,9 +121,9 @@ title = 'My New Hugo Site'
 [module]
     # uncomment line below for temporary local development of module,
     # when using a 'theme' as a git submodule or git cloned files
-    replacements = "github.com/colinwilson/lotusdocs -> lotusdocs"
+    replacements = "github.com/zonxorg/zonxdocs -> zonxdocs"
     [[module.imports]]
-        path = "github.com/colinwilson/lotusdocs"
+        path = "github.com/zonxorg/zonxdocs"
         disable = false
     [[module.imports]]
         path = "github.com/gohugoio/hugo-mod-bootstrap-scss/v5"
@@ -161,7 +157,7 @@ Modify the above front matter options to suit your needs.
 
 ## Preview your site locally
 
-Now that you've created some sample content you can preview your new Lotus Docs site using the `huge server` command:
+Now that you've created some sample content you can preview your new Zonx Docs site using the `huge server` command:
 
 ```shell
 hugo server -D
@@ -169,11 +165,10 @@ hugo server -D
 
 Navigate to `localhost:1313/docs/` and you should see a card link to the **Example Page** created earlier:
 
-![New Lotus Docs Site - Example Content](https://res.cloudinary.com/lotuslabs/image/upload/v1690992310/Lotus%20Docs/images/lotus_docs_new_site_and_content_module_setup_oiuyex.png)
-
 ## Author
 
-[Colin Wilson](https://github.com/colinwilson)
+- [Colin Wilson](https://github.com/colinwilson)
+- [Zonx Project Initiative](https://zonx.org)
 
 Copyright © 2022-2023 [Colin Wilson](https://github.com/colinwilson)
 

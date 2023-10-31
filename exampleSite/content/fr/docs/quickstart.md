@@ -6,7 +6,7 @@ author: "Colin Wilson"
 title: "Démarrage rapide"
 icon: "rocket_launch"
 toc: true
-description: "Un guide qui rapide pour créer un nouveau contenu dans Lotus Docs"
+description: "Un guide qui rapide pour créer un nouveau contenu dans Zonx Docs"
 publishdate: "2023-05-03T22:37:22+01:00"
 tags: ["Beginners"]
 ---
@@ -47,7 +47,7 @@ author = "Colin Wilson"
 title = "Quickstart"
 icon = "rocket_launch"
 toc = true
-description = "A quickstart guide to creating new content in Lotus Docs"
+description = "A quickstart guide to creating new content in Zonx Docs"
 publishdate = "2023-05-03T22:37:22+01:00"
 tags = ["Beginners"]
 +++
@@ -64,13 +64,13 @@ Navigate to the root of your Hugo project and use the `hugo new` command to crea
 
 ## Ordering Content
 
-Lotus Docs uses a simple weighting method for ordering content and creating menus.
+Zonx Docs uses a simple weighting method for ordering content and creating menus.
 
 The front matter `weight` variable is used to order all content and auto-generate the menu structure (including the sidebar menu and page navigation buttons). Lower weight values take higher precedence. So content with lower weights come first and are so ordered in the menu.
 
 ## Auto-Generated Menu
 
-As mentioned, Lotus Docs auto-generates menus and navigation links using the [front matter](https://gohugo.io/content-management/front-matter/#predefined) weight variable. For example, Navigate to the `content/docs` directory and create two content files, `doc-one.md` and `doc-two.md`, then edit the weight values to `100` and `200` respectively:
+As mentioned, Zonx Docs auto-generates menus and navigation links using the [front matter](https://gohugo.io/content-management/front-matter/#predefined) weight variable. For example, Navigate to the `content/docs` directory and create two content files, `doc-one.md` and `doc-two.md`, then edit the weight values to `100` and `200` respectively:
 
 {{< alert text="It's good practice to increment the weight of your posts by a factor of <code>100</code>. This ensures plenty of room to insert new posts between existing items should you need to." />}}
 
@@ -87,7 +87,7 @@ Links to both posts are now visible in the sidebar menu where `doc-one.md` will 
 
 ![sidebar menu items example](https://res.cloudinary.com/lotuslabs/image/upload/v1684719173/Lotus%20Docs/images/sidebar_menu_example_01-modified_qkb2si.png)
 
-{{< alert context="info" text="The option to manually arrange content via a predefined menu structure in <code>hugo.toml</code> as opposed to auto-generated via content weights is on the Lotus Docs roadmap." />}}
+{{< alert context="info" text="The option to manually arrange content via a predefined menu structure in <code>hugo.toml</code> as opposed to auto-generated via content weights is on the Zonx Docs roadmap." />}}
 
 ## Second Level Menu Items
 

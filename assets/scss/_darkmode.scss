@@ -1,0 +1,27 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    color: $body-color-dark;
+    background-color: $body-bg-dark;
+  }
+
+  .text-muted {
+    color: $body-color-dark !important;
+  }
+
+  #topnav .navigation-menu > li > a {
+    color: $body-color-dark;
+  }
+
+  #topnav.nav-sticky {
+    background-color: $body-bg-dark;
+  }
+
+  .footer.footer-light {
+    background-color: $body-bg-dark;
+  }
+
+  .hero {
+    background-image: none;
+    background-color: #1c1e21;
+  }
+}

@@ -1,9 +1,9 @@
-/* Template Name: Lotus Docs
+/* Template Name: Zonx Docs
    Author: Colin Wilson
    E-mail: colin@aigis.uk
    Created: October 2022
    Version: 1.2.0
-   File Description: Main CSS file for Lotus Docs
+   File Description: Main CSS file for Zonx Docs
 */
 
 // Custom Font Variables
@@ -58,7 +58,7 @@ $code-block-padding-top: {{ if eq .Site.Params.docs.prism true -}}0{{ else }}1.2
 
 // Prism / Chroma
 {{- if eq .Site.Params.docs.prism true }}
-@import {{ printf "'%s%s'" "custom/plugins/prism/themes/" (.Site.Params.docs.prismTheme | default "lotusdocs") }}; // current prism theme
+@import {{ printf "'%s%s'" "custom/plugins/prism/themes/" (.Site.Params.docs.prismTheme | default "zonxdocs") }}; // current prism theme
 @import "custom/plugins/prism/prism";
 {{- else }}
 @import "custom/plugins/chroma/default";

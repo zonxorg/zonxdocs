@@ -1,5 +1,5 @@
 name: "🐛 Bug Report"
-description: Create a report to help us improve Lotus Docs
+description: Create a report to help us improve Zonx Docs
 body:
   - type: markdown
     attributes:
@@ -8,11 +8,11 @@ body:
 
        Please note that this tracker is only for bugs. Do not use the issue tracker for help or feature requests.
 
-       [Our docs](https://lotusdocs.dev/docs) are a great place for most answers, but if you can't find your answer there, you can ask in [community discussion forum](https://github.com/colinwilson/lotusdocs/discussions/categories/q-a).
+       [Our docs](https://zonxdocs.pages.dev/docs) are a great place for most answers, but if you can't find your answer there, you can ask in [community discussion forum](https://github.com/zonxorg/zonxdocs/discussions/categories/q-a).
 
-       Have a feature request? Please search the ideas [on our forum](https://github.com/colinwilson/lotusdocs/discussions/categories/feature-requests) to make sure that the feature has not yet been requested. If you cannot find what you had in mind, please [submit your feature request here](https://github.com/colinwilson/lotusdocs/discussions/new?category=feature-requests).
+       Have a feature request? Please search the ideas [on our forum](https://github.com/zonxorg/zonxdocs/discussions/categories/feature-requests) to make sure that the feature has not yet been requested. If you cannot find what you had in mind, please [submit your feature request here](https://github.com/zonxorg/zonxdocs/discussions/new?category=feature-requests).
 
-       Want to show off your Lotus Docs themed website? Post a link, screenshot (optional), and details in [our Show & tell forum](https://github.com/colinwilson/lotusdocs/discussions/new?category=show-and-tell).
+       Want to show off your Zonx Docs themed website? Post a link, screenshot (optional), and details in [our Show & tell forum](https://github.com/zonxorg/zonxdocs/discussions/new?category=show-and-tell).
 
        **Thanks!**
   - type: checkboxes

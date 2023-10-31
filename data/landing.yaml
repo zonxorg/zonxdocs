@@ -20,16 +20,16 @@ hero:
   # titleLogo:
   #   path: "images/logos"
   #   filename: "title_logo.png"
-  #   alt: "Lotus Docs Logo"
+  #   alt: "Zonx Docs Logo"
   #   height: 80px
 
-  title: "Lotus Docs"
+  title: "Zonx Docs"
   subtitle: A lightweight, **modern documentation** theme for Hugo. Easily customised for building **fast**, **secure**, and **SEO-friendly** documentation sites.
 
   image:
     path: "images" # path to image under configured assets directory. default 'images'
     filename: "lotus_docs_screenshot.png" # filename of your hero image (including file extension)
-    alt: "Lotus Docs Screenshot" # Optional but recommended
+    alt: "Zonx Docs Screenshot" # Optional but recommended
     boxShadow: true # default 'false' (excludes .svg images)
     rounded: true # round the image corners? default 'false' (excludes .svg images)
 
@@ -40,7 +40,7 @@ hero:
   cta2Button:
     icon: construction
     btnText: "In Development"
-    url: "https://github.com/colinwilson/lotusdocs"
+    url: "https://github.com/zonxorg/zonxdocs"
 
   info: "**Open Source** MIT Licensed."
 
@@ -49,13 +49,13 @@ features:
   enable: true
   weight: 20
 
-  title: Why choose Lotus Docs?
-  subtitle: Lotus Docs is a highly configurable Hugo documentation theme. Yet, with the default configuration you can deploy and publish your documentation site in a matter of minutes. Check out some core features below.
+  title: Why choose Zonx Docs?
+  subtitle: Zonx Docs is a highly configurable Hugo documentation theme. Yet, with the default configuration you can deploy and publish your documentation site in a matter of minutes. Check out some core features below.
 
   items:
     - title: Fast
       icon: speed
-      description: 4 x 100's score on Google Lighthouse by default. Lotus Docs removes unused CSS, prefetches asset links, and lazy loads content images.
+      description: 4 x 100's score on Google Lighthouse by default. Zonx Docs removes unused CSS, prefetches asset links, and lazy loads content images.
 
     - title: SEO Friendly
       icon: trending_up
@@ -63,11 +63,11 @@ features:
 
     - title: Secure by default
       icon: lock
-      description: Lotus Docs' default configuration scores A+ on Mozilla Observatory. You can update the default Security Headers to suit your requirements.
+      description: Zonx Docs' default configuration scores A+ on Mozilla Observatory. You can update the default Security Headers to suit your requirements.
 
     - title: Optional Features
       icon: settings
-      description: Many Lotus Docs features are configurable via optional parameters. Require DocSearch for your site? Then enable it via a single setting.
+      description: Many Zonx Docs features are configurable via optional parameters. Require DocSearch for your site? Then enable it via a single setting.
 
     - title: Deploy to Vercel
       icon: change_history
@@ -83,19 +83,19 @@ features:
 
     - title: Multilingual Support
       icon: translate
-      description: Lotus Docs supports Hugo's Multilingual Mode. Create documentation in multiple languages side by side with i18n support.
+      description: Zonx Docs supports Hugo's Multilingual Mode. Create documentation in multiple languages side by side with i18n support.
 
     - title: Bootstrap v5
       icon: palette
-      description: Built on Bootstrap 5, Lotus Docs allows for a familiar, flexible, and intuitive developer experience. Easily customise your site via SCSS variables and files.
+      description: Built on Bootstrap 5, Zonx Docs allows for a familiar, flexible, and intuitive developer experience. Easily customise your site via SCSS variables and files.
 
 # Image compare
 image_compare:
   enable: true
   weight: 30
 
-  title: Customise The Lotus Docs Appearance
-  subtitle: Much of Lotus Docs' appearance can be customised. Dark mode is optional (enabled by default) and you can choose a Google font that suites you via the config parameters.
+  title: Customise The Zonx Docs Appearance
+  subtitle: Much of Zonx Docs' appearance can be customised. Dark mode is optional (enabled by default) and you can choose a Google font that suites you via the config parameters.
 
   items:
     - title: Dark Mode
@@ -111,8 +111,8 @@ image_compare:
         }
       }
       imagePath: "images/screenshots"
-      imageBefore: "lotusdocs_dark_v0.8.webp"
-      imageAfter: "lotusdocs_light_v0.8.webp"
+      imageBefore: "zonxdocs_dark_v0.8.webp"
+      imageAfter: "zonxdocs_light_v0.8.webp"
 
     - title: Custom Fonts
       config: {
@@ -128,8 +128,8 @@ image_compare:
         }
       }
       imagePath: "images/screenshots"
-      imageBefore: "lotusdocs_google_font_demo_inter_screenshot.webp"
-      imageAfter: "lotusdocs_google_font_demo_lifesavers_screenshot.webp"
+      imageBefore: "zonxdocs_google_font_demo_inter_screenshot.webp"
+      imageAfter: "zonxdocs_google_font_demo_lifesavers_screenshot.webp"
 
     - title: Accent Color
       config: {
@@ -144,5 +144,5 @@ image_compare:
         }
       }
       imagePath: "images/screenshots"
-      imageBefore: "lotusdocs_blue_theme_colour.webp"
-      imageAfter: "lotusdocs_cardinal_theme_colour.webp"
+      imageBefore: "zonxdocs_blue_theme_colour.webp"
+      imageAfter: "zonxdocs_cardinal_theme_colour.webp"

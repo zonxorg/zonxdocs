@@ -6,7 +6,6 @@
    File Description: Main JS file of the docs template
 */
 
-
 /*********************************/
 /*         INDEX                 */
 /*================================
