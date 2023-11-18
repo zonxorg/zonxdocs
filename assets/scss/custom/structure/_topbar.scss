@@ -430,12 +430,12 @@
 }
 
 .nav-sticky {
-  background: $body-bg;
+  background-color: $body-bg;
 }
 
 @media (prefers-color-scheme: dark) {
   .nav-sticky {
-    background: $dark;
+    background-color: $dark;
   }
 }
 
