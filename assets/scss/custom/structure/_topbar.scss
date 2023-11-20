@@ -429,14 +429,8 @@
   }
 }
 
-.nav-sticky {
+#topnav.nav-sticky {
   background-color: $white;
-}
-
-@media (prefers-color-scheme: dark) {
-  .nav-sticky {
-    background-color: $dark;
-  }
 }
 
 .navbar-white-bg {
