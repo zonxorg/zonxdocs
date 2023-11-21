@@ -15,7 +15,7 @@
 
   .logo {
     float: left;
-    color: $dark !important;
+    color: var(--bs-heading-color) !important;
 
     .l-dark,
     .logo-dark-mode {
@@ -30,6 +30,17 @@
     &:focus {
       outline: none;
     }
+  }
+
+  .logo-text {
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 1px;
+    font-family: $font-family-base;
+    text-transform: uppercase;
+    margin: 5px 0 0;
   }
 
   #navigation {
